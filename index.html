@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Family -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Pangolin&family=Roboto+Mono:wght@200&family=Shadows+Into+Light&display=swap" rel="stylesheet"> 
+    <!-- End of Font-Family -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Lorem Ipsum</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Tired of boring lorem ipsum ?</h1>
+        <form class="lorem-form">
+            <!-- Amount of paragraph -->
+            <div class="form-box">
+                <label for="amount">Paragraph(s):</label>
+                <input type="number" name="amount" id="amount" class="number" placeholder="5">
+                <button type="submit" class="button">Generate</button>
+            </div>
+            <!-- Type of Lorem -->
+            <div class="form-box">
+                <label for="type">Type:</label>
+                <select name="type" id="type" class="type">
+                    <option class="hipster" value="hipster">Hipster</option>
+                    <option class="pirate"  value="pirate">Pirate</option>
+                    <option class="office" value="office">Office</option>
+                    <option class="cosmos" value="cosmos">Cosmos</option>
+                </select>
+            </div>
+            <!-- Output Text -->
+            <article class="lorem-text"></article>
+        </form>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

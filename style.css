@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Pangolin&family=Roboto+Mono:wght@200&family=Shadows+Into+Light&display=swap');
+
+/* COMMON STYLES */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-primary: rgb(4, 50, 81);
+    --clr-secondary: rgb(29, 130, 197);
+
+    --clr-accent: rgb(111, 66, 66);
+}
+
+body {
+    font-size: 62.5%;
+    height: 100vh;
+    background-color: #ddd;
+}
+/* END OF COMMON STYLES */
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    width: 60%;
+    height: 100%;
+    margin-top: 3rem;
+    
+}
+
+.heading { 
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+}
+
+/* FORM */
+.lorem-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    height: 100%;
+}
+
+.form-box {
+    font-size: 1.3rem;
+    margin: .5rem auto;
+}
+
+.number,
+.button,
+select {
+    border: none;
+    border: 3px solid #fff;
+    border-radius: .5rem;
+    background-color: var(--clr-secondary);
+    color: #fff;
+}
+
+.number {
+    font-size: 1.3rem;
+    width: 10rem;   
+    text-align: center;
+}
+
+.button {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: .3rem;
+    margin-left: .5rem;
+    transition: all 0.5s ease;
+}
+
+.button:hover {
+    color: black;
+    border: 3px solid black;
+    background-color: var(--clr-primary);
+}
+
+select {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding: .3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+select option {
+    text-align: center;
+    padding: .5rem;
+    margin: 1rem 0;
+}
+/* END OF FORM */
+
+/* OUTPUT TEXT */
+article #item-text {
+    font-size: 1.3rem;
+    margin: 1rem auto;
+}
+/* END OF OUTPUT TEXT */
